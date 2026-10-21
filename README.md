@@ -1,5 +1,7 @@
 # Interpretable Machine Learning for Photovoltaic Defect Screening
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23537387.svg)](https://doi.org/10.5281/zenodo.23537387)
+
 Reproducible code for the peer-reviewed article:
 
 > Hoque, K. (2026). Interpretable Machine Learning for Photovoltaic Defect Screening: A Reproducible Electroluminescence Benchmark. *International Journal of Science and Research Archive*, 20(2), 371–378. https://doi.org/10.30574/ijsra.2026.20.2.1601
@@ -42,3 +44,6 @@ ELPV images are licensed CC BY-NC-SA 4.0 by their authors and are **not** redist
 
 ## Citation
 See `CITATION.cff`. Author: Khandoker Samiul Hoque (ORCID 0009-0008-0756-2395). Code license: MIT.
+
+## Archived release
+Version 1.0.0 is archived on Zenodo: [doi:10.5281/zenodo.23537388](https://doi.org/10.5281/zenodo.23537388). To cite the latest version instead, use [doi:10.5281/zenodo.23537387](https://doi.org/10.5281/zenodo.23537387).
