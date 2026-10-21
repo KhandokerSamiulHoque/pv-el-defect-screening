@@ -1,0 +1,159 @@
+{
+  "random_seed": 42,
+  "dataset_summary": {
+    "dataset": "ELPV",
+    "records": 2624,
+    "modules_reported_by_source": 44,
+    "image_shape_reported_by_source": "300x300 grayscale",
+    "cell_type_counts": {
+      "poly": 1550,
+      "mono": 1074
+    },
+    "probability_counts": {
+      "0.0": 1508,
+      "0.3333333333333333": 295,
+      "0.6666666666666666": 106,
+      "1.0": 715
+    },
+    "feature_dimensions": {
+      "Interpretable": 62,
+      "HOG": 324,
+      "Combined": 386
+    }
+  },
+  "tasks": [
+    {
+      "task": "Any annotated defect",
+      "n": 2624,
+      "positive_n": 1116,
+      "negative_n": 1508,
+      "best_model": "Combined",
+      "oof_metrics": {
+        "accuracy": 0.7214176829268293,
+        "balanced_accuracy": 0.7141850394075089,
+        "precision": 0.6748410535876476,
+        "recall": 0.6657706093189965,
+        "f1": 0.6702751465944972,
+        "roc_auc": 0.7779768356103173,
+        "pr_auc": 0.7506550825351137,
+        "true_negative": 1150,
+        "false_positive": 358,
+        "false_negative": 373,
+        "true_positive": 743
+      },
+      "confusion_matrix": [
+        [
+          1150,
+          358
+        ],
+        [
+          373,
+          743
+        ]
+      ],
+      "subgroups": [
+        {
+          "subgroup": "mono",
+          "n": 1074,
+          "positive_rate": 0.45251396648044695,
+          "accuracy": 0.7458100558659218,
+          "balanced_accuracy": 0.7412656420592929,
+          "precision": 0.7310195227765727,
+          "recall": 0.6934156378600823,
+          "f1": 0.7117212249208026,
+          "roc_auc": 0.8029520450155371,
+          "pr_auc": 0.8065370824629534,
+          "true_negative": 464,
+          "false_positive": 124,
+          "false_negative": 149,
+          "true_positive": 337
+        },
+        {
+          "subgroup": "poly",
+          "n": 1550,
+          "positive_rate": 0.4064516129032258,
+          "accuracy": 0.704516129032258,
+          "balanced_accuracy": 0.695048309178744,
+          "precision": 0.634375,
+          "recall": 0.6444444444444445,
+          "f1": 0.6393700787401576,
+          "roc_auc": 0.7657211870255348,
+          "pr_auc": 0.719593741525066,
+          "true_negative": 686,
+          "false_positive": 234,
+          "false_negative": 224,
+          "true_positive": 406
+        }
+      ]
+    },
+    {
+      "task": "High-confidence defect",
+      "n": 2624,
+      "positive_n": 821,
+      "negative_n": 1803,
+      "best_model": "Interpretable",
+      "oof_metrics": {
+        "accuracy": 0.7534298780487805,
+        "balanced_accuracy": 0.7376523631273632,
+        "precision": 0.5898760330578512,
+        "recall": 0.6954933008526187,
+        "f1": 0.6383454443823364,
+        "roc_auc": 0.8152010825103377,
+        "pr_auc": 0.7296131703365367,
+        "true_negative": 1406,
+        "false_positive": 397,
+        "false_negative": 250,
+        "true_positive": 571
+      },
+      "confusion_matrix": [
+        [
+          1406,
+          397
+        ],
+        [
+          250,
+          571
+        ]
+      ],
+      "subgroups": [
+        {
+          "subgroup": "mono",
+          "n": 1074,
+          "positive_rate": 0.3435754189944134,
+          "accuracy": 0.749534450651769,
+          "balanced_accuracy": 0.7355993772703684,
+          "precision": 0.6219512195121951,
+          "recall": 0.6910569105691057,
+          "f1": 0.6546854942233633,
+          "roc_auc": 0.8250898537354168,
+          "pr_auc": 0.7552321336055032,
+          "true_negative": 550,
+          "false_positive": 155,
+          "false_negative": 114,
+          "true_positive": 255
+        },
+        {
+          "subgroup": "poly",
+          "n": 1550,
+          "positive_rate": 0.29161290322580646,
+          "accuracy": 0.7561290322580645,
+          "balanced_accuracy": 0.7393571578251689,
+          "precision": 0.5663082437275986,
+          "recall": 0.6991150442477876,
+          "f1": 0.6257425742574257,
+          "roc_auc": 0.8072037654947853,
+          "pr_auc": 0.7114077089918023,
+          "true_negative": 856,
+          "false_positive": 242,
+          "false_negative": 136,
+          "true_positive": 316
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The public labels file does not expose module identifiers, so module-grouped cross-validation could not be performed.",
+    "Defect probability is an expert annotation, not a direct measurement of power loss or field failure.",
+    "The experiment evaluates a public benchmark and does not validate deployment on production-line or field-acquired images."
+  ]
+}

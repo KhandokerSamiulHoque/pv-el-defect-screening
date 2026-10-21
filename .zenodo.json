@@ -1,0 +1,9 @@
+{
+  "title": "Interpretable Machine Learning for Photovoltaic Defect Screening: code and results",
+  "upload_type": "software",
+  "creators": [{"name": "Hoque, Khandoker Samiul", "orcid": "0009-0008-0756-2395"}],
+  "description": "Reproducible code for the interpretable electroluminescence defect-screening benchmark published in IJSRA 20(2):371-378 (2026), with published and independently reproduced results.",
+  "license": "MIT",
+  "keywords": ["photovoltaic reliability", "electroluminescence", "interpretable machine learning", "defect detection", "reproducibility"],
+  "related_identifiers": [{"identifier": "10.30574/ijsra.2026.20.2.1601", "relation": "isSupplementTo", "scheme": "doi"}]
+}
