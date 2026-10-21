@@ -27,7 +27,7 @@ python src/run_pv_experiment.py
 ```
 Outputs go to `results/run/`. Two folders hold reference copies of the outputs:
 - `results/published/` holds the values reported in the article.
-- `results/reproduction_2026-10-15/` holds an independent rerun.
+- `results/reproduction_2026-10-15/` holds a rerun of this code made on 2026-10-15.
 
 The rerun matched the published summary exactly: the maximum absolute difference across all reported metrics was 0.0.
 
