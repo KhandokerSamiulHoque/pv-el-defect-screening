@@ -9,6 +9,7 @@ license: MIT
 repository-code: "https://github.com/KhandokerSamiulHoque/pv-el-defect-screening"
 doi: "10.5281/zenodo.23537388"
 version: "1.0.0"
+date-released: 2026-10-21
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23537387"
